@@ -1,0 +1,88 @@
+---
+title: "prac1_exercises"
+author: "May Wang"
+---
+Exercise 1: Using functions
+```{r}
+round(3.14159)
+```
+```{r}
+round(3.14159, digits = 2)
+```
+```{r}
+print(seq(1, 10, 2))
+```
+```{r}
+print(seq(by = 2, from = 1, to = 10))
+```
+```{r}
+rep(5, 7)
+```
+```{r}
+print(rep(times = 7, x = 5))
+```
+Exercise 2: Variables
+```{r}
+my_variable <- 12
+print(my_variable)
+```
+```{r}
+whatsmynumber <- 1
+whatsmynumber <- 5
+print(whatsmynumber)
+```
+```{r}
+x <- 1.74
+print(x)
+```
+```{r}
+x <- "I am a variable"
+print(x)
+```
+```{r}
+x <- TRUE
+print(x)
+```
+```{r}
+x <- "hi there"
+print(class(x))
+```
+```{r}
+x <- 520
+print(x)
+```
+```{r}
+x <- 520
+print(class(x))
+```
+```{r}
+x <- "Hello"
+print(x)
+```
+```{r}
+x <- "Hello"
+print(class(x))
+```
+```{r}
+x <- FALSE
+print(x)
+```
+```{r}
+x <- FALSE
+print(class(x))
+```
+Two batches of cells
+```{r}
+cell_id_1 <- "CX1"
+cell_id_2 <- "CX2"
+
+treated_1 <- TRUE
+treated_2 <- FALSE
+
+num_cells_before_1 <- 5415
+num_cells_before_2 <- 8123
+
+num_cells_after_1 <- 1432
+num_cells_after_2 <- 7543
+```
+
