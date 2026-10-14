@@ -1,0 +1,19 @@
+---
+title: "Brain Summary"
+author: "May Wang"
+---
+The table from HPA shows the number of genes with regionally elevated expression in human, pig, and mouse.
+This document aims to calculate the total number of regionally elevates genes in the forebrain in these three species.
+```{r}
+total_gene_number_human <- sum(180, 83, 57, 110)
+print(total_gene_number_human)
+```
+```{r}
+total_gene_number_pig <- sum(109, 157, 31, 45)
+print(total_gene_number_pig)
+```
+```{r}
+total_gene_number_rat <- sum(55, 185, 60, 98)
+print(total_gene_number_rat)
+```
+Humans had the highest number of genes with regionally elevated expression.
