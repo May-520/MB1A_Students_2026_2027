@@ -1,0 +1,101 @@
+---
+title: "prac1_exercises"
+author: "May Wang"
+---
+```{r}
+library(tidyverse)
+library(gt)
+```
+
+```{r}
+cell_id_1 <- "CX1"
+cell_id_2 <- "CX2"
+
+treated_1 <- TRUE
+treated_2 <- FALSE
+
+num_cells_before_1 <- 5415
+num_cells_before_2 <- 8123
+
+num_cells_after_1 <- 1432
+num_cells_after_2 <- 7543
+```
+
+```{r}
+cell_id_vec <- c("CX1", "CX2")
+treated_vec <- c(TRUE, FALSE)
+num_cells_before <- c(5415, 8123)
+num_cells_after <- c(1432, 7543)
+```
+
+```{r}
+cell_id <- c(cell_id_1, cell_id_2)
+treated <- c(treated_1, treated_2)
+n_before <- c(num_cells_before_1, num_cells_before_2)
+n_after <- c(num_cells_after_1, num_cells_after_2)
+```
+
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+print(all_my_pets[4])
+```
+
+```{r}
+my_first_vector <- c(1, 5, 9)
+print(my_first_vector)
+```
+
+```{r}
+character_vec <- c("hello", "this", "is", "a", "character", "vector")
+print(character_vec)
+```
+
+```{r}
+logical_vec <- c(TRUE, FALSE, TRUE)
+print(logical_vec)
+```
+
+```{r}
+x <- 1
+y <- 2
+z <- 3
+```
+
+
+```{r}
+xyz_vec <- c(x, y, z)
+```
+
+```{r}
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+print(my_data_frame)
+```
+
+```{r}
+# for example
+df <- tibble(
+  cell_ID = c("CX1", "CX2"),
+  treated = c(TRUE, FALSE),
+  num_cells_before = c(5415, 8123),
+  num_cells_after = c(1432, 7543)
+)
+
+gt(df)
+```
+
+```{r}
+weather <- read_csv("data/weather_data.csv")
+```
+
+```{r}
+gt(weather)
+```
+
+
+
+
